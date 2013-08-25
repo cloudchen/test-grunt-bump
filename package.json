@@ -1,6 +1,6 @@
 {
   "name": "test-grunt-bump",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description:": "A test project for grunt-bump",
   "repository": {
     "type": "git",

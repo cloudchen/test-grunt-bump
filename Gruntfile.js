@@ -3,6 +3,7 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
     // Task configuration.
     jshint: {
       options: {
@@ -34,6 +35,11 @@ module.exports = function(grunt) {
       lib_test: {
         files: '<%= jshint.lib_test.src %>',
         tasks: ['jshint:lib_test', 'nodeunit']
+      }
+    },
+    bump: {
+      options: {
+        pushTo: '<%=pkg.repository.url%>'
       }
     }
   });

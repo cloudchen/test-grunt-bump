@@ -1,7 +1,7 @@
 How to use grunt-bump task
 ===============
 
-## When is appropriate time to run `grunt bump`?
+## When is appropriate time to run `grunt bump` task?
 In general, you should run it when **code is ready for release** and **working directory is clean**
 
 ## What does `grunt bump` do?
@@ -25,9 +25,10 @@ By default, it
 }
 ```
 
+Let `grunt bump` task know where upstream is.
 This can also be used to avoid warnning with `npm install` or `npm update`
 
-### Override `Gruntfile.js` default remote repository url by reading corresponding configuration from `package.json`
+### Override `Gruntfile.js` default upstream by reading corresponding configuration from `package.json`
 
 ```js
 grunt.initConfig({
@@ -42,7 +43,7 @@ grunt.initConfig({
 });
 ```
 
-### Disable git-push functionality in `Gruntfile.js`
+### Disable `git-push` functionality in `Gruntfile.js`
 
 ```js
 grunt.initConfig({
